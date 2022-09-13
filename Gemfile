@@ -1,5 +1,8 @@
 source "https://rubygems.org"
 
+gem 'faker', '~> 1.6', '>= 1.6.6'
+# gem install faker -v 1.6.6
+
 # A DSL for quickly creating web applications
 # https://github.com/sinatra/sinatra
 gem "sinatra", "~> 2.1"
