@@ -1,37 +1,37 @@
 require 'faker'
 
 puts "Deleting Games, Users, Reviews data..."
-# Game.destroy_all
-# User.destroy_all
-# Review.destroy_all
+Game.destroy_all
+User.destroy_all
+Review.destroy_all
 
 puts "🌱 Creating games..."
-# g1 = Game.create(title: "Valorant", image_url: "https://mmoculture.com/wp-content/uploads/2020/08/Valorant-image.png", game_genre: "Shooter")
-# g2 = Game.create(title: "MLB The Show 22", image_url: "https://image.api.playstation.com/vulcan/ap/rnd/202201/2818/UkxS8YtE03ngMF95hyQyHpWk.png", game_genre: "Sports")
-# g3 = Game.create(title: "Madden NFL 22", image_url: "https://image.api.playstation.com/vulcan/ap/rnd/202108/0407/xG6ng0WvNnXAEshDxIveyp4T.png", game_genre: "Sports")
-# g4 = Game.create(title: "NBA 2K22", image_url: "https://image.api.playstation.com/vulcan/ap/rnd/202106/3002/Eaq9uyUlyLZK8L5xTlsPl0rM.png", game_genre: "Sports")
-# g5 = Game.create(title: "Forza Horizon 5", image_url: "https://static.wikia.nocookie.net/forzamotorsport/images/f/f4/FH5_Boxart.jpg/revision/latest?cb=20210907183312", game_genre: "Racing")
-# g6 = Game.create(title: "Minecraft", image_url: "https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png", game_genre: "Sandbox")
-# g7 = Game.create(title: "Grand Theft Auto V", image_url: "https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png", game_genre: "Open world")
-# g8 = Game.create(title: "Fortnite", image_url: "https://assets1.ignimgs.com/2018/03/06/fortnite---button-1520296499714.jpg", game_genre: "Battle royale")
-# g9 = Game.create(title: "Apex Legends", image_url: "https://upload.wikimedia.org/wikipedia/en/d/db/Apex_legends_cover.jpg", game_genre: "Battle royale")
-# g10 = Game.create(title: "Call of Duty: Modern Warfare", image_url: "https://m.media-amazon.com/images/M/MV5BMTc3NWY2ZTMtNTNlZC00MWM2LWI5MzYtMmU1YzY0ODk5ZjQ1XkEyXkFqcGdeQXVyODA2MTkwODk@._V1_.jpg", game_genre: "Shooter")
-# g11 = Game.create(title: "Call of Duty: Vanguard", image_url: "https://assets-prd.ignimgs.com/2021/08/17/call-of-duty-vanguard-button-00-1629164778736.jpg", game_genre: "Shooter")
-# g12 = Game.create(title: "Among Us", image_url: "https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_cover_art.jpg", game_genre: "Multiplayer")
+g1 = Game.create(title: "Valorant", image_url: "https://mmoculture.com/wp-content/uploads/2020/08/Valorant-image.png", game_genre: "Shooter")
+g2 = Game.create(title: "MLB The Show 22", image_url: "https://image.api.playstation.com/vulcan/ap/rnd/202201/2818/UkxS8YtE03ngMF95hyQyHpWk.png", game_genre: "Sports")
+g3 = Game.create(title: "Madden NFL 22", image_url: "https://image.api.playstation.com/vulcan/ap/rnd/202108/0407/xG6ng0WvNnXAEshDxIveyp4T.png", game_genre: "Sports")
+g4 = Game.create(title: "NBA 2K22", image_url: "https://image.api.playstation.com/vulcan/ap/rnd/202106/3002/Eaq9uyUlyLZK8L5xTlsPl0rM.png", game_genre: "Sports")
+g5 = Game.create(title: "Forza Horizon 5", image_url: "https://static.wikia.nocookie.net/forzamotorsport/images/f/f4/FH5_Boxart.jpg/revision/latest?cb=20210907183312", game_genre: "Racing")
+g6 = Game.create(title: "Minecraft", image_url: "https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png", game_genre: "Sandbox")
+g7 = Game.create(title: "Grand Theft Auto V", image_url: "https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png", game_genre: "Open world")
+g8 = Game.create(title: "Fortnite", image_url: "https://assets1.ignimgs.com/2018/03/06/fortnite---button-1520296499714.jpg", game_genre: "Battle royale")
+g9 = Game.create(title: "Apex Legends", image_url: "https://upload.wikimedia.org/wikipedia/en/d/db/Apex_legends_cover.jpg", game_genre: "Battle royale")
+g10 = Game.create(title: "Call of Duty: Modern Warfare", image_url: "https://m.media-amazon.com/images/M/MV5BMTc3NWY2ZTMtNTNlZC00MWM2LWI5MzYtMmU1YzY0ODk5ZjQ1XkEyXkFqcGdeQXVyODA2MTkwODk@._V1_.jpg", game_genre: "Shooter")
+g11 = Game.create(title: "Call of Duty: Vanguard", image_url: "https://assets-prd.ignimgs.com/2021/08/17/call-of-duty-vanguard-button-00-1629164778736.jpg", game_genre: "Shooter")
+g12 = Game.create(title: "Among Us", image_url: "https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_cover_art.jpg", game_genre: "Multiplayer")
 
 puts "🌱 Creating Users..."
-u1 = User.create(name: Faker::Name.username, password: Faker::Internet.password(min_length: 8, max_length: 12, mix_case: true, special_characters: true))
-u2 = User.create(name: Faker::Name.username, password: Faker::Internet.password(min_length: 8, max_length: 12, mix_case: true, special_characters: true))
-u3 = User.create(name: Faker::Name.username, password: Faker::Internet.password(min_length: 8, max_length: 12, mix_case: true, special_characters: true))
-u4 = User.create(name: Faker::Name.username, password: Faker::Internet.password(min_length: 8, max_length: 12, mix_case: true, special_characters: true))
-u5 = User.create(name: Faker::Name.username, password: Faker::Internet.password(min_length: 8, max_length: 12, mix_case: true, special_characters: true))
-u6 = User.create(name: Faker::Name.username, password: Faker::Internet.password(min_length: 8, max_length: 12, mix_case: true, special_characters: true))
-u7 = User.create(name: Faker::Name.username, password: Faker::Internet.password(min_length: 8, max_length: 12, mix_case: true, special_characters: true))
-u8 = User.create(name: Faker::Name.username, password: Faker::Internet.password(min_length: 8, max_length: 12, mix_case: true, special_characters: true))
-u9 = User.create(name: Faker::Name.username, password: Faker::Internet.password(min_length: 8, max_length: 12, mix_case: true, special_characters: true))
-u10 = User.create(name: Faker::Name.username, password: Faker::Internet.password(min_length: 8, max_length: 12, mix_case: true, special_characters: true))
-u11 = User.create(name: Faker::Name.username, password: Faker::Internet.password(min_length: 8, max_length: 12, mix_case: true, special_characters: true))
-u12 = User.create(name: Faker::Name.username, password: Faker::Internet.password(min_length: 8, max_length: 12, mix_case: true, special_characters: true))
+u1 = User.create(username: Faker::Internet.username, password: Faker::Internet.password)
+u2 = User.create(username: Faker::Internet.username, password: Faker::Internet.password)
+u3 = User.create(username: Faker::Internet.username, password: Faker::Internet.password)
+u4 = User.create(username: Faker::Internet.username, password: Faker::Internet.password)
+u5 = User.create(username: Faker::Internet.username, password: Faker::Internet.password)
+u6 = User.create(username: Faker::Internet.username, password: Faker::Internet.password)
+u7 = User.create(username: Faker::Internet.username, password: Faker::Internet.password)
+u8 = User.create(username: Faker::Internet.username, password: Faker::Internet.password)
+u9 = User.create(username: Faker::Internet.username, password: Faker::Internet.password)
+u10 = User.create(username: Faker::Internet.username, password: Faker::Internet.password)
+u11 = User.create(username: Faker::Internet.username, password: Faker::Internet.password)
+u12 = User.create(username: Faker::Internet.username, password: Faker::Internet.password)
 
 
 puts "🌱 Creating Reviews..."
