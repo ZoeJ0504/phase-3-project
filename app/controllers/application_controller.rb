@@ -7,5 +7,13 @@ get "/games" do
   games.to_json()
 end
 
+post "/games" do 
+  games = Game.create(
+    title: params[:title],
+    image_url: params[:image_url],
+    game_genre: params[:game_genre]
+  )
+games.to_json()
+end
 
 end
