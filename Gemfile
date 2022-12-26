@@ -32,13 +32,8 @@ gem "sinatra-activerecord", "~> 2.0"
 gem "rake", "~> 13.0"
 
 # Provides functionality to interact with a SQLite3 database
-group :development, :test do
-  gem 'sqlite3'
-end
-group :production do
-  gem 'pg'
-end
-
+# gem "sqlite3", "~> 1.4"
+gem 'pg'
 # Require all files in a folder
 gem "require_all", "~> 3.0"
 
